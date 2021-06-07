@@ -59,7 +59,6 @@ export default {
 
 <style lang="scss" scoped>
     #background {
-        height: 400px;
         background: url("../assets/img/footer-bg.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -74,6 +73,7 @@ export default {
 
     #lists {
         display: flex;
+        margin: 20px;
     }
 
     #first-column {
