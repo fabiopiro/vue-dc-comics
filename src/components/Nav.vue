@@ -5,7 +5,9 @@
           <img src="../assets/img/dc-logo.png" alt="logo">
       </div>
       <ul>
-          <li><a href="#">characters</a></li>
+          <li v-for="(link, index) in links" :key="index">
+              <a :href="link.url" :class="{ active : link.current }"> {{link.text}} </a>
+          </li>
       </ul>
     </div>
   </div>
@@ -14,7 +16,63 @@
 <script>
 
 export default {
-  name: 'Nav'
+  name: 'Nav',
+  data: function() {
+      return {
+          links: [
+              {
+                text: "characters",
+                url: "#",
+                current: false
+              },
+              {
+                text: "comics",
+                url: "#",
+                current: false
+              },
+              {
+                text: "movies",
+                url: "#",
+                current: false
+              },
+              {
+                text: "tv",
+                url: "#",
+                current: false
+              },
+              {
+                text: "games",
+                url: "#",
+                current: false
+              },
+              {
+                text: "collectibles",
+                url: "#",
+                current: false
+              },
+              {
+                text: "videos",
+                url: "#",
+                current: false
+              },
+              {
+                text: "fans",
+                url: "#",
+                current: false
+              },
+              {
+                text: "news",
+                url: "#",
+                current: false
+              },
+              {
+                text: "shop",
+                url: "#",
+                current: false
+              },
+          ]
+      }
+  }
 }
 </script>
 
@@ -43,6 +101,7 @@ export default {
         li {
 
             height: 100%;
+            margin-right: 15px;
 
             a {
                 text-decoration: none;
