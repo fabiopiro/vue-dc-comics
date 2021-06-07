@@ -1,20 +1,36 @@
 <template>
   <div id="app">
-
+    <Nav />
+    <ContentOne />
+    <ContentBar />
+    <Footer />
+    <Social />
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
+import Nav from './components/Nav.vue'
+import ContentOne from './components/ContentOne.vue'
+import ContentBar from './components/ContentBar.vue'
+import Footer from './components/Footer.vue'
+import Social from './components/Social.vue'
 
 export default {
   name: 'App',
   components: {
-    // HelloWorld
+    Nav,
+    ContentOne,
+    ContentBar,
+    Footer,
+    Social
   }
 }
 </script>
 
 <style lang="scss">
-
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 </style>
