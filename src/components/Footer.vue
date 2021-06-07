@@ -58,10 +58,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+    @import "../style/variables.scss";
+
     #background {
         background: url("../assets/img/footer-bg.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+        height: 400px;
+        overflow: hidden;
     }
 
     .container {
@@ -102,8 +107,9 @@ export default {
 
     #big-logo {
         img {
-            height: 250px;
-            width: 250px;
+            height: 450px;
+            width: 450px;
+            overflow: hidden;
         }
     }
 

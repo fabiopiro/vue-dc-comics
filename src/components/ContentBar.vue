@@ -12,8 +12,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+    @import "../style/variables.scss";
+
     div {
         height: 150px;
-        background-color: orange;
+        background-color: $brandColor;
     }
 </style>

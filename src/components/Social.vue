@@ -26,6 +26,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+  @import "../style/variables.scss";
+
+
   #background {
     padding:20px 0;
     background-color: #303030;
@@ -41,8 +45,10 @@ export default {
   #button {
     a {
       padding: 15px;
-      border: 2px solid blue;
+      border: 2px solid $brandColor;
       text-decoration: none;
+      color: white;
+      text-transform: uppercase;
     }
   }
 
@@ -52,8 +58,9 @@ export default {
     list-style: none;
 
     li:first-child{
-      font-size: 30px;
-      color: blue;
+      font-size: 20px;
+      color: $brandColor;
+      text-transform: uppercase;
     }
 
     li {

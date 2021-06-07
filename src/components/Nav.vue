@@ -77,6 +77,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+    @import "../style/variables.scss";
     
     .container {
         width: 70%;
@@ -99,8 +101,6 @@ export default {
         list-style: none;
 
         li {
-
-            height: 100%;
             margin-right: 15px;
 
             a {
@@ -109,16 +109,15 @@ export default {
                 text-transform: uppercase;
                 font-weight: bold;
                 font-size: 10px;
-            }
-            a:hover,
-            a.active {
-                color: blue;
-                border-bottom: 5px solid;
-            }
+                padding: 50px 0;
 
+                &:hover,
+                &.active {
+                    color: $brandColor;
+                    border-bottom: 5px solid;
+                }
+            }
         }
-
-
     }
 
 </style>
