@@ -23,7 +23,7 @@ export default {
     ContentBar,
     Footer,
     Social
-  }
+  },
 }
 </script>
 
