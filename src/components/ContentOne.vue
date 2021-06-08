@@ -1,12 +1,13 @@
 <template>
   <div id="background">
       <div class="container">
+    <span id="current-series-tag">CURRENT SERIES</span>
         <Card 
         v-for="(comic, index) in comics"
         :key="index"
         :item="comic"
         />
-      <span>LOAD MORE</span>
+      <span id="load-more">LOAD MORE</span>
       </div>
   </div>
 </template>
@@ -115,12 +116,21 @@ export default {
         flex-wrap: wrap;
         justify-content: center;
         padding: 30px 0;
+        position: relative;
     }
 
-    span {
+    #load-more {
       align-self: center;
       color: white;
       background-color: $brandColor;
       padding: 10px 40px;
+    }
+    #current-series-tag {
+      color: white;
+      background-color: $brandColor;
+      padding: 10px 40px;
+      position: absolute;
+      top: -20px;
+      left: 0;
     }
 </style>

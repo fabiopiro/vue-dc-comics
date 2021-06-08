@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Nav />
+    <Jumbotron />
     <ContentOne />
     <ContentBar />
     <Footer />
@@ -10,6 +11,7 @@
 
 <script>
 import Nav from './components/Nav.vue'
+import Jumbotron from './components/Jumbotron.vue'
 import ContentOne from './components/ContentOne.vue'
 import ContentBar from './components/ContentBar.vue'
 import Footer from './components/Footer.vue'
@@ -19,6 +21,7 @@ export default {
   name: 'App',
   components: {
     Nav,
+    Jumbotron,
     ContentOne,
     ContentBar,
     Footer,
@@ -28,5 +31,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./style/general.scss"
+@import "./style/general.scss";
+
 </style>
